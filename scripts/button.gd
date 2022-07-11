@@ -11,7 +11,6 @@ func _on_Area2D_body_entered(body:Node) -> void:
 
 func on_game_button_pressed(button: GameButton) -> void:
 	if button == self:
-		print("pressed")
 		$AnimationPlayer.play("pressed")
 
 
@@ -22,5 +21,4 @@ func _on_Area2D_body_exited(body:Node) -> void:
 
 func on_game_button_released(button: GameButton):
 	if button == self:
-		print("released")
 		$AnimationPlayer.play("released")
